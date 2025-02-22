@@ -65,10 +65,6 @@ lib/
 - **Form Validation**: Provides user-friendly validation messages.
 - **Modular Code Structure**: Easy to maintain and extend.
 
-## Screenshots
-
-(Add relevant screenshots here)
-
 ## License
 
 This project is licensed under the MIT License.

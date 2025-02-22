@@ -34,7 +34,7 @@ class FilePickerWidget extends StatelessWidget {
         return Container(
           height: 250,
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.amber, width: 3),
+            border: Border.all(color: Colors.black, width: 2),
             borderRadius: BorderRadius.circular(12),
           ),
           margin: const EdgeInsets.only(bottom: 16),
@@ -50,8 +50,9 @@ class FilePickerWidget extends StatelessWidget {
               children: [
                 Text(
                   label,
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.bold),
+                      fontSize: 12, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
                 Expanded(

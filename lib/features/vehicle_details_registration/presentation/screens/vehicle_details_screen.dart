@@ -67,13 +67,13 @@ class _VehicleDetailsScreenState extends State<VehicleDetailsScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            _buildImagePicker("Vehicle Book Photo", _vehicleBook,
+                (file) => _vehicleBook = file),
             Expanded(
                 child: GridView.count(
               crossAxisCount: 2,
               crossAxisSpacing: 4,
               children: [
-                _buildImagePicker("Vehicle Book Photo", _vehicleBook,
-                    (file) => _vehicleBook = file),
                 _buildImagePicker("Income Certificate Photo",
                     _incomeCertificate, (file) => _incomeCertificate = file),
                 _buildImagePicker("Insurance Document", _insuranceDocument,

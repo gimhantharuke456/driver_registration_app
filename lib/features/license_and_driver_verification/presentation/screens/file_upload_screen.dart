@@ -30,7 +30,9 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-                child: ListView(
+                child: GridView.count(
+              crossAxisCount: 2,
+              crossAxisSpacing: 4,
               children: const [
                 FilePickerWidget(
                     label: AppStrings.drivingLicenseFrontLabel,

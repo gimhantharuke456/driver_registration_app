@@ -12,6 +12,9 @@ import 'package:driver_registration_app/features/driver_registration/presentatio
 import 'package:driver_registration_app/features/license_and_driver_verification/data/repositories/file_repository_impl.dart';
 import 'package:driver_registration_app/features/license_and_driver_verification/domain/usecases/upload_file.dart';
 import 'package:driver_registration_app/features/license_and_driver_verification/presentation/provider/file_provider.dart';
+import 'package:driver_registration_app/features/vehicle_details_registration/data/repositories/vehicle_details_repository_impl.dart';
+import 'package:driver_registration_app/features/vehicle_details_registration/domain/usecases/submit_vehicle_details.dart';
+import 'package:driver_registration_app/features/vehicle_details_registration/presentation/provider/vehicle_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'core/theme/app_theme.dart';
@@ -24,6 +27,9 @@ final fileRepositary = FileRepositoryImpl();
 final uploadFile = UploadFile(fileRepositary);
 final bankDetailsRepository = BankRepositoryImpl();
 final bankDetailsUseCase = SubmitBankDetails(bankDetailsRepository);
+final vehicleDetailsRepository = VehicleRepositoryImpl();
+final submeitVehicleDetails =
+    SubmitVehicleDetails(repository: vehicleDetailsRepository);
 void main() {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(
@@ -36,6 +42,9 @@ void main() {
     ChangeNotifierProvider(
       create: (_) => BankProvider(submitBankDetails: bankDetailsUseCase),
     ),
+    ChangeNotifierProvider(
+        create: (_) =>
+            VehicleProvider(submitVehicleDetails: submeitVehicleDetails)),
   ], child: const MyApp()));
 }
 

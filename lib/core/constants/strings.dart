@@ -14,6 +14,8 @@ class AppStrings {
   static const String accountHolderNameLabel = "Account Holder Name";
   static const String continueButton = "Continue";
 
+  // Vehicle screen
+  static const String vehicleDetailsTitle = "Vehicle Details";
   // File upload screen
   static const String fileUploadTitle = "Upload Driver Files";
   static const String drivingLicenseFrontLabel = "Driving License Front";

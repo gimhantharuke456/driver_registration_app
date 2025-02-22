@@ -53,7 +53,7 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
               onPressed: () {
                 NavigationUtil.navigateTo(
                     context: context,
-                    routeName: AppRoutes.bankDetailsRegistration);
+                    routeName: AppRoutes.vehicleDetailsRegistration);
               },
             )
           ],

@@ -30,7 +30,7 @@ The **Driver Registration App** is a Flutter-based mobile application that provi
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/driver-registration-app.git
+   git clone https://github.com/gimhantharuke456/driver_registration_app
    ```
 2. Navigate to the project directory:
    ```sh
